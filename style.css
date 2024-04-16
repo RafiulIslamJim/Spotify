@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap');
 body{
-  background-color: rgb(240, 188, 119);
+  background-color: rgb(249, 236, 218);
 }
 *{
   margin: 0;
@@ -21,7 +21,7 @@ nav ul{
 }
 nav ul li{
   padding: 0 10px;
-  font-weight: bolder;
+  font-weight: bold;
 }
 .brand{
   display: flex;
@@ -33,4 +33,77 @@ nav ul li{
 .brand img{
   width: 60px;
   padding: 5px 10px;
+}
+.container{
+  min-height: 70vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  margin: 25px auto;
+  width: 75%;
+  border-radius: 15px;
+  padding: 30px;
+  background-image: url('bg.jpg');
+}
+.songItemContainer{
+  margin-top: 20px;
+}
+.songItem{
+  height: 50px;
+  display: flex;
+  background-color: white;
+  color: black;
+  width: 120%;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 32px;
+}
+.songItem img{
+  width: 45px;
+  margin: 20px;
+  border-radius: 25px;
+}
+.songName{
+  font-family: Sedan;
+}
+.songListPlay{
+  margin: 0 20px;
+}
+.songListPlay i{
+  cursor: pointer;
+}
+.bottom{
+  position: sticky;
+  height: 110px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#myProgressBar{
+  width: 80vw;
+  margin-top: 18px;
+  cursor: pointer;
+}
+.icons{
+  margin: 15px 0;
+}
+.icons i{
+  cursor: pointer;
+}
+.fa-circle-play{
+  margin: 0 5px;
+}
+.songInfo{
+  position: absolute;
+  left: 10vw;
+  margin-top: 50px ;
+  font-family: Sedan;
+}
+.songInfo img{
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
 }
